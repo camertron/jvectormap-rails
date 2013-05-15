@@ -40,7 +40,7 @@ JVectorMap::Rails.precompile_maps << "us_merc_en"
 Get a list of all available maps by running this from within your Rails app's root:
 
 ```
-bundle exec jvectormap:maps
+bundle exec rake jvectormap:maps
 ```
 
 ### License
