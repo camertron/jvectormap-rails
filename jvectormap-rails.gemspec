@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.has_rdoc = true
 
-  s.add_dependency 'railties', '~> 3.1'
+  s.add_dependency 'railties', '>= 3.1', '< 5.0'
 
   s.require_path = 'lib'
   s.files = Dir["{lib,vendor,tasks}/**/*", "Gemfile", "History.txt", "LICENSE", "README.md", "Rakefile", "jvectormap-rails.gemspec"]
