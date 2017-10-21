@@ -4,7 +4,6 @@ require 'rubygems' unless ENV['NO_RUBYGEMS']
 
 require 'bundler'
 require 'rubygems/package_task'
-require 'pry-byebug'
 
 Bundler::GemHelper.install_tasks
 
