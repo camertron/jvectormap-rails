@@ -1,7 +1,0 @@
-== 1.0.1
-
-* Support for Rails 4 (@edslocomb)
-
-== 1.0.0
-
-* Birthday!

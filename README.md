@@ -18,21 +18,26 @@ You can add jvectormap-rails to your `application.js` file using a require state
 //= require jvectormap
 ```
 
-To add support for whatever maps you want to use, include them from the `jvectormap/maps` path:
+Don't forget to add the CSS to your `application.css` file too:
 
 ```
-//= require jvectormap
+*= require 'jvectormap'
+```
+
+To add support for whatever maps you want to use, include them in `application.js`:
+
+```
 //= require jvectormap/maps/us_merc_en
 ```
 
-The basic pattern is `{country}-{region}_{city}_{projection}_{language}`.  For example, the map `us-il-chicago_mill_en` has a country of `us` (United States), region of `il` (Illinois), city of `chicago`, projection of `mill` (Miller), and a language of `en` (English).  Other common projections include Mercator (`merc`), and Albers equal area (`aea`).
+The basic pattern is `{country}-{region}_{city}_{projection}`.  For example, the map `us-il-chicago_mill` has a country of `us` (United States), region of `il` (Illinois), city of `chicago`, and a projection of `mill` (Miller).  Other common projections include Mercator (`merc`), and Albers equal area (`aea`).
 
 ### Asset Precompilation
 
 jvectormap-rails supports precompiling individual maps.  Add an initializer to your app, eg. `config/initializers/jvectormap.rb`:
 
 ```ruby
-JVectorMap::Rails.precompile_maps << "us_merc_en"
+JVectorMap::Rails.precompile_maps << 'us_merc'
 ```
 
 ### Rake Tasks

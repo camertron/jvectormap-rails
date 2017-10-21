@@ -1,8 +1,6 @@
-# encoding: UTF-8
-
 module JVectorMap
   module Rails
-    VERSION = "1.0.1"
-    JVECTORMAP_VERSION = "1.2.1"
+    VERSION = '2.0.0'
+    JVECTORMAP_VERSION = '2.0.3'
   end
 end

@@ -1,8 +1,7 @@
-# encoding: UTF-8
+require 'jvectormap/rails/engine'
 
 module JVectorMap
   module Rails
-
     class << self
 
       # maps that will be added to asset precompilation
@@ -11,16 +10,9 @@ module JVectorMap
       end
 
       def gem_root
-        File.expand_path(File.join(File.dirname(__FILE__), "../"))
+        File.expand_path(File.join(File.dirname(__FILE__), '../'))
       end
 
     end
-
   end
 end
-
-require 'rails'
-
-require 'jvectormap/rails/version'
-require 'jvectormap/rails/engine'
-require 'jvectormap/rails/railtie'
