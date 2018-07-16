@@ -7,7 +7,7 @@ jvectormap-rails
 
 Add it to your `Gemfile`:
 ```
-gem 'jvectormap-rails', '~> 1.0.0'
+gem 'jvectormap-rails'
 ```
 
 ### Usage
