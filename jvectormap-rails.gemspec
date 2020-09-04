@@ -11,7 +11,6 @@ Gem::Specification.new do |s|
   s.description = s.summary = 'jVectorMap for the Rails asset pipeline'
 
   s.platform = Gem::Platform::RUBY
-  s.has_rdoc = true
 
   s.add_dependency 'railties', '~> 5.2'
 
